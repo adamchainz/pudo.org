@@ -1,3 +1,5 @@
+@import "bootstrap.less";
+
 /*
  * Palette:
  *
@@ -10,14 +12,16 @@
  */
 
 html, body {
-  background-color: #fff;
-  color: #222;
+  font-size: 1em;
   line-height: 1.4em;
 }
 
+body {
+  padding-top: 1em;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media (min-width: 1200px) {
@@ -36,10 +40,6 @@ a:hover, a:active {
   color: #08c;
 }
 */
-
-a {
-  color: #BA4B37;
-}
 
 a:hover {
   text-decoration: none;
@@ -70,7 +70,7 @@ header {
 header h1 {
   background-image: url(http://assets.pudo.org/img/logo_bigger.png);
   background-repeat: no-repeat;
-  padding: 0.3em 0 0.2em 3em;
+  padding: 0.3em 0 0.2em 2em;
 }
 
 header h1.visible-sm {
@@ -86,7 +86,7 @@ header h1 a {
 
 footer {
   padding: 5em 0 5em 0;
-  color: #666;
+  color: @text-shaded;
   text-align: right;
 }
 
@@ -95,7 +95,7 @@ footer {
 
 #sidebar {
   font-size: 0.9em;
-  color: #666;
+  color: @text-shaded;
 }
 
 #sidebar h3 {
@@ -146,7 +146,7 @@ footer {
 }
 
 #page .entries .date {
-  color: #666;
+  color: @text-shaded;
 }
 
 #page .entries .title {
@@ -156,7 +156,7 @@ footer {
 /* Post page */
 
 .post-date {
-  color: #666;
+  color: @text-shaded;
 }
 
 .related-posts {
@@ -178,5 +178,5 @@ footer {
 .captioned .caption {
   font-size: 0.9em;
   margin: 0.5em 0 0 0;
-  color: #666;
+  color: @text-shaded;
 }
