@@ -2,7 +2,15 @@
 @import "../vendor/bootstrap/less/variables.less";
 @import "../vendor/bootstrap/less/mixins.less";
 
-@brand-primary:         #BA4B37;
+// https://kuler.adobe.com/Copy-of-Vitamin-C-color-theme-3756655/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Copy%20of%20Vitamin%20C&mode=rgb&rgbvalues=0,0.2627450980392157,0.34509803921568627,0.12156862745098039,0.5411764705882353,0.4392156862745098,0.7450980392156863,0.8588235294117647,0.2235294117647059,1,0.9803921568627451,0.9058823529411765,0.9921568627450981,0.4549019607843137,0&swatchOrder=0,1,2,3,4
+
+@theme-1:               #16193B;
+@theme-2:               #35478C;
+@theme-3:               #4E7AC7;
+@theme-4:               #7FB2F0;
+@theme-5:               #ADD5F7;   
+
+@brand-primary:         @theme-2; // #BA4B37;
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -11,9 +19,14 @@
 @body-bg:               #fff;
 @text-color:            #222;
 @text-shaded:           #444;
+@border-color:          #ccc;
 
+//@menu-fg:               @theme-2; // #fff; //#999; //@theme-3;
+//@menu-bg:               #eee; //@theme-2; //#fff; //@theme-1;
 
-@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@link-color:            @brand-primary;
+
+@font-family-sans-serif: "Bitter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-base:        @font-family-sans-serif;
 
 // Reset

@@ -1,30 +1,30 @@
 ---
-layout: page
+layout: default
 ---
+<div class="post">
+  <p class="date">{{ page.date | date_to_long_string }}</p>
+  <h2>{{ page.title }}</h2>
+  <div id="post">
+    {{ content }}
+  </div>
+  <div id="disqus_thread" class="hidden-sm"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'pudo'; 
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-<p class="post-date">{{ page.date | date_to_long_string }}</p>
-<div id="post">
-  {{ content }}
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/monokai.min.css">
+  <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+        $('pre:has(code)').each(function(i, el) {
+        hljs.highlightBlock(el);
+      });
+    });
+  </script>
 </div>
-<div id="disqus_thread" class="hidden-sm"></div>
-<script type="text/javascript">
-  var disqus_shortname = 'pudo'; 
-  (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/monokai.min.css">
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-<script type="text/javascript">
-$(function() {
-    $('pre:has(code)').each(function(i, el) {
-    hljs.highlightBlock(el);
-  });
-});
-</script>
-
-
